@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Example 1</title>
+  </head>
+  <body>
+    <button id="btn-1" type="button">1</button>
+    <button id="btn-2" type="button">2</button>
+    <button id="btn-3" type="button">3</button>
+  </body>
+
+  <script>
+    (function(){
+      var buttons = document.querySelectorAll('button')
+
+      //for (let i = 0; i < buttons.length; i++) {
+      for (var i = 0; i < buttons.length; i++) {
+        var button = buttons[i]
+        button.addEventListener('click', function(clickEvent){
+          console.log(i)
+        })
+      }
+
+      console.log(i)
+    })()
+  </script>
+</html>
